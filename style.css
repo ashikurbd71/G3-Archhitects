@@ -41,7 +41,13 @@ background: #FF900E;
     font-weight: 700;
     color: white;
     font-size: 15px;
+    transition: all 1s;
  
+}
+
+.banner-btn:hover{
+    background-color: aquamarine;
+    color: black;
 }
 
 
@@ -98,7 +104,73 @@ margin: 0 auto;
     margin-top: 40px;
 }
 
+/*main section*/
 
+main{
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.span-1{color: var(--dark-03, #727272);
+ 
+    font-size: 35px;
+   
+    font-weight: 500;
+ }
+
+.span-3{color: #FF900E;
+
+    font-size: 35px;
+
+    font-weight: 700;
+    
+}
+
+.teams-section{
+    display: flex;
+    align-items: center;
+}
+
+.teams-img{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+.teams-text{
+    padding-right: 100px;
+}
+.teams-text p{
+    color: var(--dark-03, #727272);
+
+font-size: 16px;
+
+font-weight: 400;
+line-height: 20px; /* 162.5% */
+}
+.teams-text h3{
+    color: var(--dark-01, #131313);
+    font-family: Work Sans;
+    font-size: 35px;
+     margin-bottom: 20px;
+    font-weight: 700;}
+    
+.teams-text h3{
+    font-size: 25px;
+}
+
+.span-1{ font-size: 25px;}
+.span-3{
+    font-size: 25px;
+}
+
+.teams-img img{
+    width: 250px;
+}
 /*responsive section*/
 
 
@@ -139,47 +211,34 @@ margin: 0 auto;
     .banner-btn{
         padding: 12px 20px;
     }
-}
 
-
-/*tablet*/
-
-@media screen and  (max-width:960px) {
-
-    header{
-        padding: 10px;
-    }
-
-    nav{
-      flex-direction: column;
-    }
-
-   nav ul li{
+    /*team section*/
+    .teams-section{
         flex-direction: column;
-      
     }
-
-    nav ul{
-        margin-top: 20px;
-        gap:40px;
-    }
-
     
-    header h3{
+    .teams-img{
+        grid-template-columns: 1fr;
+        padding: 10px;
        
-        font-size: 40px;
     }
 
-    .banner-h{
-        margin-top: 20px;
-        font-size: 30px;
-        text-align: center;
+    .teams-img img{
+        width: 100%;
     }
-    .banner-p{
-        font-size: 10px;
+    .teams-text{
+    flex-direction: column;
+    justify-content: center;
+   margin-left: 50px;
     }
-    .banner-btn{
-        padding: 12px 20px;
-    }
-    
+
+
+
+.spann{
+    margin-top: 20px;
+    text-align: center;
 }
+
+
+}
+
